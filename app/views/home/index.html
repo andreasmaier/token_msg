@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="shortcut icon" href="assets/favicon.ico"/>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+Welcome
+    <% if tm_user_signed_in? %>
+        <%= link_to('Logout', destroy_tm_user_session_path, :method => :delete) %>
+    <% else %>
+        <a href="<%= new_tm_user_session_path %>">Sign In</a>
+        <a href="<%= new_tm_user_registration_path %>">Sign Up</a>
+    <% end %>
+</body>
+</html>
