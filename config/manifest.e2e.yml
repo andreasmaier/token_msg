@@ -1,0 +1,8 @@
+applications:
+- name: token_msg
+  memory: 512M
+  instances: 1
+  host: tm_e2e
+  domain: cfapps.io
+  services:
+  - tm_psql
