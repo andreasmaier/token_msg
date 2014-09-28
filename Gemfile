@@ -17,4 +17,6 @@ gem 'twitter-bootstrap-rails'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'capybara'
+  gem 'poltergeist'
 end

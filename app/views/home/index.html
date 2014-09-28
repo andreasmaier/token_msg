@@ -8,10 +8,10 @@
 <body>
 Welcome
     <% if tm_user_signed_in? %>
-        <%= link_to('Logout', destroy_tm_user_session_path, :method => :delete) %>
+        <%= link_to('Logout', destroy_tm_user_session_path, :method => :delete, :class => ("btn btn-default")) %>
     <% else %>
-        <a href="<%= new_tm_user_session_path %>">Sign In</a>
-        <a href="<%= new_tm_user_registration_path %>">Sign Up</a>
+        <%= link_to('Sign In', new_tm_user_session_path, :method => :get, :class => ("btn btn-default")) %>
+        <%= link_to('Sign Up', new_tm_user_registration_path, :method => :get, :class => ("btn btn-default")) %>
     <% end %>
 </body>
 </html>
