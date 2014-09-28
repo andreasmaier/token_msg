@@ -10,6 +10,18 @@ require 'rails_helper'
 #     end
 #   end
 # end
-RSpec.describe HomeHelper, :type => :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+# RSpec.describe HomeHelper, :type => :helper do
+#   pending "add some examples to (or delete) #{__FILE__}"
+# end
+
+describe 'Just a test' do
+  it 'test that someting is true' do
+    expect(true).to be_truthy
+  end
+end
+
+describe 'Just another test' do
+  it 'test that someting is true' do
+    expect(false).to be_falsey
+  end
 end
