@@ -4,7 +4,6 @@ applications:
   instances: 1
   host: tm_e2e
   domain: cfapps.io
-  command: bundle exec rake db:create db:migrate db:seed && bundle exec rails s
   env:
     RAILS_ENV: e2e
   services:
